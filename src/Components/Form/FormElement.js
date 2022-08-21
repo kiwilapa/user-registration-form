@@ -91,6 +91,7 @@ const FormElement = ({setUserList, userList}) => {
         tempUserList.push({...values})
         console.log(tempUserList)
         setUserList(tempUserList)
+        resetForm()
     }
 
     // to reset the form once user click on 'Cancel' button
