@@ -1,12 +1,12 @@
 import * as Yup from 'yup'
 
 export const validationSchema = Yup.object().shape({
-    name : Yup.string().required('Required'),
-    dobOrAge : Yup.string().required('Required'),
-    sex : Yup.string().required('Required'),
-    mobileNo : Yup.number().required('Required'),
-    idType : Yup.string().required('Required'),
-    govtId : Yup.string().required('Required'),
+    name : Yup.string().required('Please mention your name'),
+    dobOrAge : Yup.string().required('Please mention your age or date of birth'),
+    sex : Yup.string().required('please mention your sex'),
+    mobileNo : Yup.number().required('Please mention mobile number'),
+    idType : Yup.string().required('Please mention Id type'),
+    govtId : Yup.string().required('Please enter govt Id'),
     enterLabel : Yup.string().required('Enter Label'),
     guardianName : Yup.string().required('Please mention guardian name'),
     email : Yup.string().required('Please mention email').matches(/^[a-z0-9]+(\.[a-z0-9]|[a-z0-9])+@[a-z]+\.com$/, 'invalid email'),
